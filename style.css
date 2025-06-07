@@ -1,0 +1,89 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #73D38E, #F3F3F3);
+  
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #f1f4f2;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #2F8A47 !important;
+}
+
+.btn-cart {
+  background-color: #40B55D;
+  color: #333;
+  border-radius: 15px;
+  border: none;
+  padding: 6px 12px;
+}
+
+.btn-cart:hover {
+  background-color: #90ee90;
+}
+
+.banner {
+  position: relative;
+  height: 85vh; /* ocupa 100% da altura da tela */
+  background: url('fotos/Imagem.png') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* escurece a imagem para o texto aparecer melhor */
+}
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.categoria {
+  text-align: center;
+}
+
+.categoria-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.categoria-img:hover {
+  transform: scale(1.05);
+}
+/* Aplicar a fonte Poppins para o site inteiro */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para as imagens circulares das categorias */
+.categoria-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.categoria-img:hover {
+  transform: scale(1.05);
+}
