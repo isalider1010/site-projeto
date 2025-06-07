@@ -36,14 +36,14 @@ body {
 
 .banner {
   position: relative;
-  height: 85vh; /* ocupa 100% da altura da tela */
+  height: 85vh; 
   background: url('fotos/Imagem.png') no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
 
 .banner-overlay {
-  background-color: rgba(0, 0, 0, 0.4); /* escurece a imagem para o texto aparecer melhor */
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 .categorias {
   display: flex;
@@ -69,12 +69,12 @@ body {
 .categoria-img:hover {
   transform: scale(1.05);
 }
-/* Aplicar a fonte Poppins para o site inteiro */
+
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo para as imagens circulares das categorias */
+
 .categoria-img {
   width: 100%;
   aspect-ratio: 1;
@@ -86,4 +86,45 @@ body {
 
 .categoria-img:hover {
   transform: scale(1.05);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+
+.categoria-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid #dee2e6;
+  transition: transform 0.3s;
+}
+
+.categoria-img:hover {
+  transform: scale(1.05);
+}
+
+
+.btn-cart {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.btn-cart:hover {
+  background-color: #4caf50;
+}
+
+.mais-vendidos h2 {
+  color: #333;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.card img {
+  object-fit: cover;
+  height: 280px;
 }
