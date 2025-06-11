@@ -199,4 +199,17 @@ body {
   
   text-align: center;
 }
+<style>
+  .card-img-top {
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .card-img-top {
+    transform: scale(1.1);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+  }
+</style>
 
