@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sapo Cururu</title>
+  <title>Sapo Cururu - Roupas Infantis</title>
+  <meta name="description" content="Loja infantil Sapo Cururu - Roupas para meninos e meninas de 0 a 10 anos com qualidade, conforto e muito carinho.">
 
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -15,263 +15,205 @@
 </head>
 <body>
 
+  <div class="container-principal">
 
-<nav class="navbar navbar-expand-lg shadow-sm">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="fotos/logo.png" alt="Logo" width="70" height="70" class="me-2 rounded-circle">
-      Sapo Cururu
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse text-center" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Meninas 
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Babys de 0 a 1 ano</a></li>
-            <li><a class="dropdown-item" href="#">Meninas 1 a 10</a></li>
-          </ul>
+    
+    <div class="top-bar">
+      <img src="fotos/logo.png" alt="Logo Sapo Cururu">
+    </div>
+
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Novidades</a></li>
+        <li class="dropdown">
+          <a href="#">Infantil</a>
+          <div class="mega-menu">
+            <div class="column">
+              <h4>Menina</h4>
+              <a href="#">Conjuntos</a>
+              <a href="#">Vestidos</a>
+              <a href="#">Blusas</a>
+              <a href="#">Calças</a>
+            </div>
+            <div class="column">
+              <h4>Menino</h4>
+              <a href="#">Conjuntos</a>
+              <a href="#">Camisetas</a>
+              <a href="#">Calças</a>
+            </div>
+          </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Meninos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Babys de 0 a 1 ano</a></li>
-            <li><a class="dropdown-item" href="#">Meninos 1 a 10</a></li>
-          </ul>
+        <li class="dropdown">
+          <a href="#">Bebês</a>
+          <div class="mega-menu">
+            <div class="column">
+              <h4>Menina</h4>
+              <a href="#">Conjuntos</a>
+              <a href="#">Saída Maternidade</a>
+              <a href="#">Borys</a>
+            </div>
+            <div class="column">
+              <h4>Menino</h4>
+              <a href="#">Conjuntos</a>
+              <a href="#">Saída Maternidade</a>
+              <a href="#">Borys</a>
+            </div>
+          </div>
         </li>
-        <li class="nav-item ms-3">
-          <button class="btn btn-cart"><i class="bi bi-cart-fill"></i> Carrinho</button>
-        </li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
+    </nav>
+
+    
+    <div class="banner-container">
+      <img src="fotos/banner_1700x700.jpeg" alt="Banner principal" class="banner-img">
     </div>
+
+    
+    <section class="categorias py-5 text-center">
+      <h2 class="mb-4">Categorias</h2>
+      <div class="container position-relative">
+        <div id="carouselCategorias" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <div class="row justify-content-center g-4">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="meninas.html">
+                    <img src="fotos/logo.menina.jpeg" alt="Meninas" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Meninas</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="meninos.html">
+                    <img src="fotos/logo.menino.jpeg" alt="Meninos" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Meninos</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="bebês.html">
+                    <img src="fotos/conj bory(o)2.jpeg" alt="Bebês" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Bebês</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="acessórios.html">
+                    <img src="fotos/logonaninha.jpeg" alt="Acessórios" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Acessórios</p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="carousel-item">
+              <div class="row justify-content-center g-4">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="calçados.html">
+                    <img src="fotos/calcado.jpeg" alt="Calçados" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Calçados</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="promoções.html">
+                    <img src="fotos/promocao.jpeg" alt="Promoções" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Promoções</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="inverno.html">
+                    <img src="fotos/inverno.jpeg" alt="Inverno" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Inverno</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="verão.html">
+                    <img src="fotos/verao.jpeg" alt="Verão" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Verão</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategorias" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCategorias" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="mais-vendidos py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4 fw-bold">Mais Vendidos</h2>
+        <div class="row g-4">
+
+          
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100">
+              <img src="fotos/conj bory(o)3.jpeg" class="card-img-top" alt="Produto">
+              <div class="card-body">
+                <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
+                <p class="text-success fw-bold">R$ 189,90</p>
+                <button class="btn btn-success w-100">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+  
+
+        </div>
+      </div>
+    </section>
+
   </div>
-</nav>
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="fotos/bb azul.png" class="d-block w-100" alt="imagens roupas">
-    </div>
-    <div class="carousel-item">
-      <img src="fotos/bb rosa.jpeg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-<section class="categorias py-5 text-center">
-  <div class="container">
-    <div class="row justify-content-center g-4">
-
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="babys-menino.html">
-          <img src="fotos/logo.baby(o).jpeg" alt="Babys Menino" class="img-fluid categoria-img">
-        </a>
-        <p class="mt-2 fw-bold">Babys RN ao G (Menino)</p>
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="babys-menina.html">
-          <img src="fotos/logo.baby(a).jpeg" alt="Babys Menina" class="img-fluid categoria-img">
-        </a>
-        <p class="mt-2 fw-bold">Babys RN ao G (Menina)</p>
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="meninos.html">
-          <img src="fotos/logo.menino.jpeg" alt="Meninos" class="img-fluid categoria-img">
-        </a>
-        <p class="mt-2 fw-bold">Meninos 1 ao 10</p>
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="meninas.html">
-          <img src="fotos/logo.menina.jpeg" alt="Meninas" class="img-fluid categoria-img">
-        </a>
-        <p class="mt-2 fw-bold">Meninas 1 ao 10</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="mais-vendidos py-5 text-center">
-  <div class="container">
-    <h2 class="mb-4 fw-bold">Catálogo</h2>
-    <div class="row g-4">
-     <div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/conj bory(o)3.jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
-            <p class="text-success fw-bold">R$ 189,90</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
+  
+  <footer class="text-white" style="background-color: #219b29; width: 100%;">
+    <div class="container py-5">
+      <div class="row justify-content-between text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Nossa Loja</h5>
+          <p class="mb-1">
+            <a href="https://www.google.com/maps?q=Av.+Capitão+Índio+Bandera,+1400,+Paraná+-+PR" target="_blank" class="text-white text-decoration-none">
+              Av. Capitão Índio Bandera, 1400
+            </a>
+          </p>
+          <p class="mb-1">Centro, Campo Mourão - PR</p>
+          <p class="mb-1">CEP: 87300-005</p>
+          <p class="mb-0">Telefone: (44) 99844-3838</p>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/conj bory(a)2.jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto de saída de Maternidade Rosa</p>
-            <p class="text-success fw-bold">R$ 189,90</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/conj frio(o)5.jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto de Frio Azul </p>
-            <p class="text-success fw-bold">R$ 150,00</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/conj frio(a)2.jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto de Frio Rosa</p>
-            <p class="text-success fw-bold">R$ 39,90</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
-        </div>
-      </div><div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/macacão(o).jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto Menino Camiseta e Bermuda Azul</p>
-            <p class="text-success fw-bold">R$ 39,90</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/conj frio(o)4.jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto Menino Camiseta e Bermuda Azul</p>
-            <p class="text-success fw-bold">R$ 39,90</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/conj bory(a).jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto Menino Camiseta e Bermuda Azul</p>
-            <p class="text-success fw-bold">R$ 39,90</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="card h-100">
-          <img src="fotos/conj bory(o)2.jpeg" class="card-img-top" alt="Conjunto Menino Azul">
-          <div class="card-body">
-            <p class="card-title fw-semibold">Conjunto Menino Camiseta e Bermuda Azul</p>
-            <p class="text-success fw-bold">R$ 39,90</p>
-            <button class="btn btn-success w-100">Comprar</button>
-          </div>
-        </div>
-      </div>
-</section>
-<?php
-// footer.php - Rodapé do site
-?>
-<style>
-  footer {
-    background-color: #8EE0AC; /* Verde claro do logo */
-  }
-
-  i {
-    color: #FFFFFF; /* Ícones brancos para contraste */
-  }
-
-  .fa-solid, .fa-brands  {
-    font-size: 2.5rem;
-    margin: 0 5px;
-  }
-
-  .mapa-empresa {
-    width: 100%;
-    height: 100%;
-    min-height: 200px;
-    border-radius: 8px;
-  }
-</style>
-
-<footer class="text-white py-4 mt-5" id="contato">
-  <div class="container">
-    <div class="row flex-column flex-md-row">
-      <!-- Mapa do Google -->
-      <div class="col-md-4 mb-4 order-3 order-md-1">
-        <div class="h-100">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.2804867693487!2d-52.377396624996486!3d-24.047112279346287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f2bf7729e1e137%3A0xe7b998215f2d2bb3!2sAv.%20Cap.%20%C3%8Dndio%20Bandeira%2C%201400%20-%20Centro%2C%20Campo%20Mour%C3%A3o%20-%20PR%2C%2087300-206%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1718109343433!5m2!1spt-BR!2sbr"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            class="mapa-empresa"></iframe>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4 order-2 order-md-2 d-flex flex-column justify-content-center">
-        <div class="info">
-          <h4 class="h5">Sapo Cururu</h4>
-          <p>CNPJ: 01.123.123.0001/01</p>
-          <p><i class="fas fa-map-marker-alt"></i> Av. Capitão Índio Bandeira, 1400 - Prédio Antares, Campo Mourão - PR</p>
-          <p><i class="fas fa-phone"></i> (44) 9 9844-3838 </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4 order-1 order-md-3 d-flex flex-column justify-content-center">
-        <h3 class="h5 mb-3">Entre em contato:</h3>
-        <div class="d-flex gap-3 fs-3">
-          <a href="https://www.instagram.com/sapo_cururu_babys_teen?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white">
-            <i class="fa-brands fa-instagram"></i>
+        <div class="col-md-4 mb-4 text-center">
+          <h5 class="fw-bold">Redes Sociais</h5>
+          <a href="https://www.instagram.com/sapo_cururu_babys_teen" target="_blank" class="text-white fs-4 me-3">
+            <i class="fab fa-instagram"></i>
           </a>
-          <a href="mailto:contato@moria.com" target="_blank" class="text-white">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://wa.me/5544998443838" target="_blank" class="text-white">
-            <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/5544998443838" target="_blank" class="text-white fs-4">
+            <i class="fab fa-whatsapp"></i>
           </a>
         </div>
+        <div class="col-md-4 mb-4 text-center text-md-end">
+          <h5 class="fw-bold">Sapo Cururu</h5>
+          <p class="mb-0">Roupas infantis com carinho e qualidade.</p>
+        </div>
+      </div>
+      <hr class="border-white my-3">
+      <div class="text-center">
+        <p class="mb-0">© 2025 <strong>Sapo Cururu</strong>. Todos os direitos reservados.</p>
       </div>
     </div>
+  </footer>
 
-    <div class="row">
-      <div class="col-12 text-center mt-3">
-        <p class="mb-0">&copy; 2025 Sapo Cururu. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
