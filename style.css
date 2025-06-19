@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(90deg, #73D38E, #F3F3F3);
+  background-color: #34a853;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -219,7 +219,7 @@ body {
     object-fit: cover;
   }
   .navbar {
-  background-color: #4caf50;
+  background-color: #90d493;
   padding: 10px;
 }
 
