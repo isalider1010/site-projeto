@@ -1,4 +1,4 @@
-<?php // bebes.php ?>
+<?php  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

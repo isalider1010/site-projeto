@@ -16,7 +16,7 @@ body {
 
 .foto-dona {
   width: 100%;
-  max-width: 350px; /* Limita o tamanho máximo */
+  max-width: 350px; 
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -34,7 +34,7 @@ body {
 }
 
 .caixa-texto {
-  background-color: #b6e2b1; /* verde claro */
+  background-color: #b6e2b1; 
   padding: 25px;
   border-radius: 20px;
   font-family: 'Poppins', sans-serif;

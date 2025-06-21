@@ -21,13 +21,13 @@ body {
   color: #f1f4f2;
 }
 
-/* Atualização para o efeito da linha embaixo no hover */
+
 .navbar ul li a {
   color: white;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
-  position: relative; /* necessário para o efeito */
+  position: relative; 
 }
 
 .navbar ul li a::after {
@@ -37,7 +37,7 @@ body {
   left: 0;
   height: 2px;
   width: 0;
-  background-color: #2F8A47; /* cor da linha */
+  background-color: #2F8A47; 
   transition: width 0.3s ease;
 }
 
@@ -259,9 +259,7 @@ body {
   margin-right: 20px;
 }
 
-.navbar ul li a {
-  /* já atualizado acima */
-}
+
 
 .navbar ul li:hover .mega-menu {
   display: flex;
@@ -490,9 +488,8 @@ body {
   background-color: #2a8a43;
 }
 
-/* RESPONSIVIDADE ADICIONAL */
 
-/* Tablets e telas médias */
+
 @media (max-width: 992px) {
   .navbar ul {
     flex-wrap: wrap;
@@ -516,7 +513,7 @@ body {
   }
 }
 
-/* Tablets pequenos e smartphones grandes */
+
 @media (max-width: 768px) {
   .navbar ul {
     flex-direction: column;
@@ -553,7 +550,7 @@ body {
   }
 }
 
-/* Smartphones pequenos */
+
 @media (max-width: 480px) {
   .navbar ul li a {
     padding: 8px 12px;
