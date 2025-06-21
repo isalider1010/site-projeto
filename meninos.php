@@ -1,3 +1,4 @@
+<?php // meninos.php ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,27 +18,25 @@
 
   <div class="container-principal">
 
-    
     <div class="top-bar">
       <img src="fotos/logo.png" alt="Logo Sapo Cururu">
     </div>
 
-    
     <nav class="navbar">
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="#">Novidades</a></li>
+        <li><a href="index.php">Início</a></li>
+        <li><a href="#">Sobre</a></li>
         <li class="dropdown">
           <a href="#">Infantil</a>
           <div class="mega-menu">
             <div class="column">
               <h4>Menina</h4>
-              <a href="conj-meninas.html">Conjuntos</a>
-              <a href="meninas-vestido.html">Vestidos</a>
+              <a href="conj-meninas.php">Conjuntos</a>
+              <a href="meninas-vestido.php">Vestidos</a>
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="#">Conjuntos</a>
+              <a href="meninos.php">Conjuntos</a>
               <a href="#">Camisetas</a>
               <a href="#">Calças</a>
             </div>
@@ -48,83 +47,64 @@
           <div class="mega-menu">
             <div class="column">
               <h4>Menina</h4>
-              <a href="#">Conjuntos</a>
+              <a href="bebês-menina.php">Conjuntos</a>
               <a href="#">Saída Maternidade</a>
-              <a href="#">Borys</a>
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="#">Conjuntos</a>
+              <a href="bebês-menino.php">Conjuntos</a>
               <a href="#">Saída Maternidade</a>
-              <a href="#">Borys</a>
             </div>
           </div>
         </li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="contato.php">Contato</a></li>
       </ul>
     </nav>
-    <section class="mais-vendidos py-5 text-center">
-      <div class="container">
-        <h2 class="mb-4 fw-bold">Conjuntos</h2>
-        <div class="row g-4">
 
-          
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Meninos</h1>
+      <div class="row g-4">
+
+      <?php
+        $produtos = [
+          ["img" => "bory3(o).jpeg", "nome" => "Body Azul Estampado"],
+          ["img" => "conjbaby(o).jpeg", "nome" => "Conjunto Baby Estilo Marinho"],
+          ["img" => "conj bory(o)2.jpeg", "nome" => "Conjunto Body e Shorts Bege"],
+          ["img" => "conj bory(o)3.jpeg", "nome" => "Conjunto Body Listrado Verde"],
+          ["img" => "conj frio (o).jpeg", "nome" => "Conjunto Inverno Moletom Cinza"],
+          ["img" => "conj bory (o).jpeg", "nome" => "Conjunto Body Azul Marinho"],
+          ["img" => "conj frio(o) 3.jpeg", "nome" => "Conjunto Moletom Estampa Urso"],
+          ["img" => "conj frio(o)4.jpeg", "nome" => "Conjunto Moletom Verde Militar"],
+          ["img" => "conj frio(o)5.jpeg", "nome" => "Conjunto Inverno Dino"],
+          ["img" => "conj frio(o)6.jpeg", "nome" => "Conjunto Inverno Azul e Branco"],
+          ["img" => "conj frio(o)7.jpeg", "nome" => "Conjunto Moletom Listrado Azul"]
+        ];
+
+        foreach ($produtos as $produto) {
+          echo '
           <div class="col-12 col-sm-6 col-md-3">
-            <div class="card h-100">
-              <img src="fotos/conj frio(a).jpeg" class="card-img-top" alt="Produto">
-              <div class="card-body">
-                <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
-                <p class="text-success fw-bold">R$ 189,90</p>
-                <button class="btn btn-success w-100">Comprar</button>
+            <div class="card h-100 d-flex flex-column">
+              <img src="fotos/' . $produto["img"] . '" class="card-img-top" alt="' . $produto["nome"] . '">
+              <div class="card-body d-flex flex-column">
+                <p class="card-title fw-semibold">' . $produto["nome"] . '</p>
+                <p class="text-success fw-bold">R$ 39,90</p>
+                <a href="https://wa.me/5544998443838?text=Olá! Tenho interesse no produto: ' . urlencode($produto["nome"]) . ' - R$ 39,90"
+                   target="_blank" class="btn btn-success w-100 mt-auto">
+                  <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="card h-100">
-              <img src="fotos/conj frio(a)2.jpeg" class="card-img-top" alt="Produto">
-              <div class="card-body">
-                <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
-                <p class="text-success fw-bold">R$ 189,90</p>
-                <button class="btn btn-success w-100">Comprar</button>
-              </div>
-          </div>
-       </div>
-       <div class="col-12 col-sm-6 col-md-3">
-            <div class="card h-100">
-              <img src="fotos/conj menina 2.jpeg" class="card-img-top" alt="Produto">
-              <div class="card-body">
-                <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
-                <p class="text-success fw-bold">R$ 189,90</p>
-                <button class="btn btn-success w-100">Comprar</button>
-              </div>
-          </div>
-       </div>
-       <div class="col-12 col-sm-6 col-md-3">
-            <div class="card h-100">
-              <img src="" class="card-img-top" alt="Produto">
-              <div class="card-body">
-                <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
-                <p class="text-success fw-bold">R$ 189,90</p>
-                <button class="btn btn-success w-100">Comprar</button>
-              </div>
-          </div>
-       </div>
-       <div class="col-12 col-sm-6 col-md-3">
-            <div class="card h-100">
-              <img src="" class="card-img-top" alt="Produto">
-              <div class="card-body">
-                <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
-                <p class="text-success fw-bold">R$ 189,90</p>
-                <button class="btn btn-success w-100">Comprar</button>
-              </div>
-          </div>
-       </div>
-          
-        
-    </section>
+          </div>';
+        }
+      ?>
 
-    <footer class="text-white" style="background-color: #219b29; width: 100%;">
-    <div class="container py-5">
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="text-white" style="background-color: #219b29; width: 100%;">
+    <div class="container py-3">
       <div class="row justify-content-between text-center text-md-start">
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold">Nossa Loja</h5>
