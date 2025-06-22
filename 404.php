@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Página Não Encontrada - 404 - Lia: Bolos e Cia</title>
+  <title>Página Não Encontrada - 404 - Sapo Cururu</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -18,7 +18,7 @@
       justify-content: center;
       padding: 80px 20px;
       text-align: center;
-      background: linear-gradient(to right,rgb(239, 230, 230), #fddcd8);
+      background: linear-gradient(to right,rgb(239, 230, 230),rgb(216, 253, 218));
       border-radius: 20px;
       max-width: 800px;
       margin: 60px auto;
@@ -28,14 +28,14 @@
 
     .pagina-404 h1 {
       font-size: 6rem;
-      color: #;
+      color: #219b29;
       margin-bottom: 20px;
       font-family: 'Playfair Display', serif;
     }
 
     .pagina-404 p {
       font-size: 1.4rem;
-      color: #5C4033;
+      color:rgb(237, 235, 235);
       margin-bottom: 30px;
     }
 
@@ -43,7 +43,7 @@
       padding: 14px 30px;
       font-size: 1rem;
       border-radius: 25px;
-      background-color: #F3B6C9;
+      background-color:rgb(182, 243, 192);
       color: #fff;
       border: none;
       text-decoration: none;
@@ -52,7 +52,7 @@
     }
 
     .pagina-404 a:hover {
-      background-color: #e89aaf;
+      background-color:rgb(154, 232, 158);
       transform: scale(1.05);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       color: #fff;

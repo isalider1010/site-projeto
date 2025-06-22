@@ -60,7 +60,7 @@
   </nav>
 
   <div class="container sobre-container text-center py-5">
-    <h2 class="mb-4">Conheça a Dona da Sapo Cururu</h2>
+    <h2 class="mb-4">Sobre mim</h2>
     <div class="row align-items-center">
       <div class="col-md-6 text-center">
         <img src="fotos/sobre-foto.jpeg" alt="Dona da Loja" class="foto-dona animated-fade-in" />
