@@ -20,19 +20,19 @@
 
   <nav class="navbar">
     <ul>
-      <li><a href="index.php">Início</a></li>
-      <li><a href="#">Sobre</a></li>
+      <li><a href="home.php">Início</a></li>
+      <li><a href="sobre.php">Sobre</a></li>
       <li class="dropdown">
         <a href="#">Infantil</a>
         <div class="mega-menu">
           <div class="column">
             <h4>Menina</h4>
-            <a href="#">Conjuntos</a>
+            <a href="conj-meninas.php">Conjuntos</a>
             <a href="meninas-vestido.php">Vestidos</a>
           </div>
           <div class="column">
             <h4>Menino</h4>
-            <a href="#">Conjuntos</a>
+            <a href="conj-meninos.php">Conjuntos</a>
             <a href="#">Camisetas</a>
             <a href="#">Calças</a>
           </div>

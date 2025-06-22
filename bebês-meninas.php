@@ -24,7 +24,7 @@
 
     <nav class="navbar">
       <ul>
-        <li><a href="index.php">Início</a></li>
+        <li><a href="home.php">Início</a></li>
         <li><a href="sobre.php">Sobre</a></li>
         <li class="dropdown">
           <a href="#">Infantil</a>

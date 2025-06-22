@@ -35,7 +35,7 @@ $whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho intere
 
   <nav class="navbar">
     <ul>
-      <li><a href="index.php">Início</a></li>
+      <li><a href="home.php">Início</a></li>
       <li><a href="#">Sobre</a></li>
       <li class="dropdown">
         <a href="#">Infantil</a>
