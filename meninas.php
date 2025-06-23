@@ -24,7 +24,7 @@
     <nav class="navbar">
       <ul>
         <li><a href="home.php">Início</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="sobre.php">Sobre</a></li>
         <li class="dropdown">
           <a href="#">Infantil</a>
           <div class="mega-menu">
@@ -35,9 +35,7 @@
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="#">Conjuntos</a>
-              <a href="#">Camisetas</a>
-              <a href="#">Calças</a>
+              <a href="conj-meninos.php">Conjuntos</a>
             </div>
           </div>
         </li>
@@ -46,13 +44,13 @@
           <div class="mega-menu">
             <div class="column">
               <h4>Menina</h4>
-              <a href="bebes-menina.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+              <a href="bebes-meninas.php">Conjuntos</a>
+              
             </div>
             <div class="column">
               <h4>Menino</h4>
               <a href="bebes-menino.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+             
             </div>
           </div>
         </li>

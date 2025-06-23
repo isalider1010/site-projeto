@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /Site-Projeto/
+
+# Página de erro personalizada
+ErrorDocument 404 /Site-Projeto/404.php
+
+# Se o arquivo ou diretório não existir, redireciona para index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]

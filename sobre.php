@@ -30,13 +30,12 @@
           <div class="column">
             <h4>Menina</h4>
             <a href="conj-meninas.php">Conjuntos</a>
-            <a href="meninas-vestido.php">Vestidos</a>
+            
           </div>
           <div class="column">
             <h4>Menino</h4>
             <a href="meninos.php">Conjuntos</a>
-            <a href="#">Camisetas</a>
-            <a href="#">Calças</a>
+            <
           </div>
         </div>
       </li>
@@ -45,13 +44,13 @@
         <div class="mega-menu">
           <div class="column">
             <h4>Menina</h4>
-            <a href="bebês-menina.php">Conjuntos</a>
-            <a href="#">Saída Maternidade</a>
+            <a href="bebes-meninas.php">Conjuntos</a>
+            
           </div>
           <div class="column">
             <h4>Menino</h4>
-            <a href="bebês-menino.php">Conjuntos</a>
-            <a href="#">Saída Maternidade</a>
+            <a href="bebes-menino.php">Conjuntos</a>
+            
           </div>
         </div>
       </li>
@@ -67,12 +66,12 @@
       </div>
       <div class="col-md-6">
         <div class="caixa-texto">
-          <h4 class="mb-3">Com amor e dedicação desde 20XX 💚</h4>
+          <h4 class="mb-3">Com amor e dedicação desde 2011 💚</h4>
           <p>
-            Olá! Meu nome é [Nome da Dona] e sou a fundadora da <strong>Sapo Cururu</strong>, uma loja pensada com muito carinho para vestir os pequenos com conforto, estilo e alegria.
+            Olá! Meu nome é Elizandra e sou a fundadora da <strong>Sapo Cururu</strong>, uma loja pensada com muito carinho para vestir os pequenos com conforto, estilo e alegria.
           </p>
           <p>
-            Desde 20XX, dedico meu amor à moda infantil, escolhendo peças de qualidade e com um toque especial. Aqui, cada cliente é tratado como parte da nossa família.
+            Desde 2011, dedico meu amor à moda infantil, escolhendo peças de qualidade e com um toque especial. Aqui, cada cliente é tratado como parte da nossa família.
           </p>
           <p>
             Agradeço a cada pessoa que confia no nosso trabalho. Seja bem-vindo(a) à Sapo Cururu!

@@ -1,11 +1,11 @@
 <?php
-$page = $_GET['page'] ?? 'home';  
+$page = $_GET['page'] ?? 'home';
 $file = $page . '.php';
 
-if (file_exists($file)) {
-    include $file; 
+if (file_exists($file) && is_file($file)) {
+    include $file;
 } else {
-    header("HTTP/1.0 404 Not Found");
-    include '404.php'; 
+    http_response_code(404); 
+    include '404.php';       
 }
 ?>

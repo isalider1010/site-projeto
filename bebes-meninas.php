@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,13 +35,10 @@
             <div class="column">
               <h4>Menina</h4>
               <a href="conj-meninas.php">Conjuntos</a>
-              <a href="meninas-vestido.php">Vestidos</a>
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="#">Conjuntos</a>
-              <a href="#">Camisetas</a>
-              <a href="#">Calças</a>
+              <a href="conj-meninos.php">Conjuntos</a>
             </div>
           </div>
         </li>
@@ -47,13 +47,13 @@
           <div class="mega-menu">
             <div class="column">
               <h4>Menina</h4>
-              <a href="bebês-menina.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+              <a href="bebes-meninas.php">Conjuntos</a>
+              
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="bebês-menino.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+              <a href="bebes-menino.php">Conjuntos</a>
+              
             </div>
           </div>
         </li>
@@ -68,25 +68,57 @@
 
         <?php
         $produtos = [
-          "conj bory(a).jpeg",
-          "conj bory(a)2.jpeg",
-          "bory2(a).jpeg",
-          "bory4(a).jpeg",
-          "conj saia.jpeg",
-          "conj(a).jpeg",
-          "logo.baby(a).jpeg",
-          "bory(a)8.jpeg"
+          [
+            "imagem" => "conj bory(a).jpeg",
+            "nome" => "Saída de maternidade 7 peças RN",
+            "preco" => "329,90"
+          ],
+          [
+            "imagem" => "conj bory(a)2.jpeg",
+            "nome" => "Saída de Maternidade 5 peças RN",
+            "preco" => "359,90"
+          ],
+          [
+            "imagem" => "bory2(a).jpeg",
+            "nome" => "Saída de maternidade RN",
+            "preco" => "296,00"
+          ],
+          [
+            "imagem" => "bory4(a).jpeg",
+            "nome" => "Conjunto de Maternidade RN ",
+            "preco" => "339,00"
+          ],
+          [
+            "imagem" => "conj saia.jpeg",
+            "nome" => "Conjunto Aconchego 1 ao 4",
+            "preco" => "189,90"
+          ],
+          [
+            "imagem" => "conj(a).jpeg",
+            "nome" => "Conjunto Aconchego 1 ao 4",
+            "preco" => "189,90"
+          ],
+          [
+            "imagem" => "logo.baby(a).jpeg",
+            "nome" => "Macacão Aconchego RN e P",
+            "preco" => "136,90"
+          ],
+          [
+            "imagem" => "bory(a)8.jpeg",
+            "nome" => "Conj Bory RN ao GG",
+            "preco" => "119,90"
+          ]
         ];
 
-        foreach ($produtos as $img) {
+        foreach ($produtos as $produto) {
           echo '
           <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100 d-flex flex-column">
-              <img src="fotos/' . $img . '" class="card-img-top" alt="Produto">
+              <img src="fotos/' . $produto["imagem"] . '" class="card-img-top" alt="Produto">
               <div class="card-body d-flex flex-column">
-                <p class="card-title fw-semibold">Conjunto de saída de Maternidade azul</p>
-                <p class="text-success fw-bold">R$ 189,90</p>
-                <a href="https://wa.me/5544998443838?text=Olá! Tenho interesse no produto: Conjunto de saída de Maternidade azul - R$ 189,90" 
+                <p class="card-title fw-semibold">' . $produto["nome"] . '</p>
+                <p class="text-success fw-bold">R$ ' . $produto["preco"] . '</p>
+                <a href="https://wa.me/5544998443838?text=Olá! Tenho interesse no produto: ' . urlencode($produto["nome"]) . ' - R$ ' . $produto["preco"] . '" 
                    target="_blank" class="btn btn-success w-100 mt-auto">
                   <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
                 </a>
@@ -100,9 +132,9 @@
       </div>
     </section>
 
+    <?php include 'footer.php'; ?>
 
-  <?php include 'footer.php'; ?>
-
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>

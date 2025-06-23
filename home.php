@@ -32,13 +32,11 @@
             <div class="column">
               <h4>Menina</h4>
               <a href="conj-meninas.php">Conjuntos</a>
-              <a href="meninas-vestido.php">Vestidos</a>
+              
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="#">Conjuntos</a>
-              <a href="#">Camisetas</a>
-              <a href="#">Calças</a>
+              <a href="conj-meninos.php">Conjuntos</a>
             </div>
           </div>
         </li>
@@ -47,13 +45,13 @@
           <div class="mega-menu">
             <div class="column">
               <h4>Menina</h4>
-              <a href="bebês-menina.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+              <a href="bebes-meninas.php">Conjuntos</a>
+              
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="bebês-menino.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+              <a href="bebes-menino.php">Conjuntos</a>
+              
             </div>
           </div>
         </li>
@@ -66,8 +64,8 @@
     </div>
 
     <section class="categorias py-5 text-center">
-      <h2 class="mb-4">Categorias</h2>
       <div class="container position-relative">
+        <h2 class="mb-4 fw-bold">Categorias</h2>
         <div id="carouselCategorias" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
 
@@ -149,14 +147,14 @@
 
           <?php
           $produtos = [
-            ["img" => "fotos/conj bory(o)3.jpeg", "nome" => "Conjunto de saída de Maternidade azul", "preco" => "189,90"],
-            ["img" => "fotos/conj bory(a)2.jpeg", "nome" => "Conjunto de saída de Maternidade rosa", "preco" => "189,90"],
-            ["img" => "fotos/conj menino.jpeg", "nome" => "Conjunto infantil Menino", "preco" => "149,90"],
-            ["img" => "fotos/logo.baby(a).jpeg", "nome" => "Macacão Bebê Rosa", "preco" => "99,90"],
-            ["img" => "fotos/conj(a).jpeg", "nome" => "Conjunto Floral Bebê", "preco" => "119,90"],
-            ["img" => "fotos/conjbaby(o).jpeg", "nome" => "Conjunto Baby Menino", "preco" => "129,90"],
-            ["img" => "fotos/bory2(a).jpeg", "nome" => "Body Rosa Bebê", "preco" => "69,90"],
-            ["img" => "fotos/bory3(o).jpeg", "nome" => "Body Azul Bebê", "preco" => "69,90"],
+            ["img" => "fotos/conj bory(o)3.jpeg", "nome" => "Conjunto de saída de Maternidade Tricot bebê RN", "preco" => "359,90"],
+            ["img" => "fotos/conj bory(a)2.jpeg", "nome" => "Conjunto de saída de Maternidade Tricot bebê RN", "preco" => "359,90"],
+            ["img" => "fotos/conj menino.jpeg", "nome" => "Conjunto Camisa e Calça social 1 ao 10", "preco" => "221,80"],
+            ["img" => "fotos/logo.baby(a).jpeg", "nome" => "Macacão Aconchego RN e P", "preco" => "136,90"],
+            ["img" => "fotos/conj(a).jpeg", "nome" => "Conj Aconchego 1 ao 4", "preco" => "189,90"],
+            ["img" => "fotos/conjbaby(o).jpeg", "nome" => "Saída de Maternidade RN", "preco" => "296,00"],
+            ["img" => "fotos/bory2(a).jpeg", "nome" => "Saída de Maternidade RN", "preco" => "296,00"],
+            ["img" => "fotos/bory3(o).jpeg", "nome" => "Saída de Maternidade RN", "preco" => "296,00"],
           ];
 
           foreach ($produtos as $produto) {
@@ -182,7 +180,6 @@
     </section>
 
     <?php include 'footer.php'; ?>
-
 
   </div>
 

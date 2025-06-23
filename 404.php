@@ -18,7 +18,7 @@
       justify-content: center;
       padding: 80px 20px;
       text-align: center;
-      background: linear-gradient(to right,rgb(239, 230, 230),rgb(216, 253, 218));
+      background: linear-gradient(to right,rgb(47, 203, 76),rgb(217, 247, 227));
       border-radius: 20px;
       max-width: 800px;
       margin: 60px auto;
@@ -28,14 +28,14 @@
 
     .pagina-404 h1 {
       font-size: 6rem;
-      color: #219b29;
+      color:rgb(6, 129, 45);
       margin-bottom: 20px;
       font-family: 'Playfair Display', serif;
     }
 
     .pagina-404 p {
       font-size: 1.4rem;
-      color:rgb(237, 235, 235);
+      color:rgb(22, 14, 10);
       margin-bottom: 30px;
     }
 
@@ -43,7 +43,7 @@
       padding: 14px 30px;
       font-size: 1rem;
       border-radius: 25px;
-      background-color:rgb(182, 243, 192);
+      background-color:rgb(45, 214, 36);
       color: #fff;
       border: none;
       text-decoration: none;
@@ -52,7 +52,7 @@
     }
 
     .pagina-404 a:hover {
-      background-color:rgb(154, 232, 158);
+      background-color:rgb(154, 232, 155);
       transform: scale(1.05);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       color: #fff;
@@ -71,7 +71,47 @@
 </head>
 <body>
 
-  <?php include 'menu.php'; ?> 
+ <div class="top-bar">
+    <img src="fotos/logo.png" alt="Logo Sapo Cururu">
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.php">Início</a></li>
+      <li><a href="sobre.php">Sobre</a></li>
+      <li class="dropdown">
+        <a href="#">Infantil</a>
+        <div class="mega-menu">
+          <div class="column">
+            <h4>Menina</h4>
+            <a href="conj-meninas.php">Conjuntos</a>
+            
+          </div>
+          <div class="column">
+            <h4>Menino</h4>
+            <a href="meninos.php">Conjuntos</a>
+            
+          </div>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Bebês</a>
+        <div class="mega-menu">
+          <div class="column">
+            <h4>Menina</h4>
+            <a href="bebes-meninas.php">Conjuntos</a>
+            
+          </div>
+          <div class="column">
+            <h4>Menino</h4>
+            <a href="bebes-menino.php">Conjuntos</a>
+            
+          </div>
+        </div>
+      </li>
+      <li><a href="contato.php">Contato</a></li>
+    </ul>
+  </nav>
 
   <main>
     <div class="pagina-404">

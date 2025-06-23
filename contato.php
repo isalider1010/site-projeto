@@ -15,7 +15,47 @@
 </head>
 <body>
 
-  <?php include 'menu.php'; ?>
+<div class="container-principal">
+  <div class="top-bar">
+    <img src="fotos/logo.png" alt="Logo Sapo Cururu" />
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.php">Início</a></li>
+      <li><a href="sobre.php">Sobre</a></li>
+      <li class="dropdown">
+        <a href="#">Infantil</a>
+        <div class="mega-menu">
+          <div class="column">
+            <h4>Menina</h4>
+            <a href="#">Conjuntos</a>
+            <a href="meninas-vestido.php">Vestidos</a>
+          </div>
+          <div class="column">
+            <h4>Menino</h4>
+            <a href="conj-meninos.php">Conjuntos</a>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Bebês</a>
+        <div class="mega-menu">
+          <div class="column">
+            <h4>Menina</h4>
+            <a href="bebes-meninas.php">Conjuntos</a>
+            
+          </div>
+          <div class="column">
+            <h4>Menino</h4>
+            <a href="bebes-menino.php">Conjuntos</a>
+            
+          </div>
+        </div>
+      </li>
+      <li><a href="contato.php">Contato</a></li>
+    </ul>
+  </nav>
 
   <div class="container mt-5">
     <form id="form-contato" novalidate>
@@ -42,8 +82,8 @@
       <div class="row mb-3">
         <div class="col-md-8">
           <label for="endereco" class="form-label">Endereço completo ou CEP</label>
-          <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite o CEP ou endereço completo" />
-          <div class="invalid-feedback">Por favor, informe um endereço válido ou CEP.</div>
+          <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua, número, cidade ou CEP" required />
+          <div class="invalid-feedback">Informe um endereço completo ou um CEP válido.</div>
         </div>
       </div>
 
@@ -67,25 +107,13 @@
         <div class="invalid-feedback">Por favor, escreva sua mensagem.</div>
       </div>
 
-      <button type="submit" class="btn btn-success">Enviar</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+   </div>
+</div>
 
-    <div id="social-icons" class="mt-4">
-      <a href="https://www.facebook.com/boleira.lia" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://www.instagram.com/lbc12020" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://wa.me/5544988563181" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
-  </div>
 
-  <?php include 'footer.php'; ?>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+<script src="script.js" defer></script>
+<?php include 'footer.php'; ?>
 </body>
-</html>
+</html> 

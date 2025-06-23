@@ -1,22 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form-contato");
-
-  if (!form) return;
-
   const endereco = document.getElementById("endereco");
 
-  // Listener para campo de CEP
+  if (!form || !endereco) return;
+
+  const cepRegex = /^\d{5}-?\d{3}$/;
+
   endereco.addEventListener("blur", function () {
     const valor = endereco.value.trim();
-    const cepRegex = /^\d{5}-?\d{3}$/;
 
     if (cepRegex.test(valor)) {
+      
       const cep = valor.replace(/\D/g, "");
-
       fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(res => res.json())
         .then(data => {
-          console.log(data); // Para debug
           if (!data.erro) {
             const enderecoCompleto = `${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`;
             endereco.value = enderecoCompleto;
@@ -31,11 +29,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     let valid = true;
-    const campos = [form.nome, form.email, form.telefone, form.endereco, form.assunto, form.mensagem];
+    const campos = [
+      form.nome,
+      form.email,
+      form.telefone,
+      form.endereco,
+      form.assunto,
+      form.mensagem
+    ];
+
     limparValidacoes();
 
     campos.forEach(campo => {
@@ -61,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (valor && campo.name === "endereco") {
-        const temCEP = /^\d{5}-?\d{3}$/.test(valor);
+        const temCEP = cepRegex.test(valor);
         const partesEndereco = valor.split(",").map(p => p.trim()).filter(p => p.length >= 2);
         if (!temCEP && partesEndereco.length < 3) {
           setErro(campo, "Informe um endereço completo ou apenas o CEP.");
@@ -79,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       limparValidacoes();
     }
   });
+
 
   function setErro(campo, mensagem) {
     const formGroup = campo.closest(".mb-3") || campo.closest(".col-md-4") || campo.closest(".col-md-8");

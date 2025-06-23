@@ -1,22 +1,18 @@
 <?php
 $produtos = [
-  "conj frio (o).jpeg",
-  "conj frio(o) 2.jpeg",
-  "conj frio(o) 3.jpeg",
-  "conj frio(o)4.jpeg",
-  "conj frio(o)5.jpeg",
-  "conj frio(o)6.jpeg",
-  "Conj8.jpeg",
-  "conj9.jpeg",
-  "conj10.jpeg",
-  "conj11.jpeg",
-  "conj12.jpeg",
-  "conj13.jpeg"
+  ["imagem" => "conj frio (o).jpeg", "nome" => "Conjunto De Boucle masc 10", "preco" => "R$ 219,90"],
+  ["imagem" => "conj frio(o) 2.jpeg", "nome" => "Conjunto de Moleton 4 ao 10", "preco" => "R$ 149,90"],
+  ["imagem" => "conj frio(o) 3.jpeg", "nome" => "Conjunto de Moleton 8", "preco" => "R$ 199,90"],
+  ["imagem" => "conj frio(o)4.jpeg", "nome" => "Conjunto de Boucle c/ capus 1 ao 3", "preco" => "R$ 189,00"],
+  ["imagem" => "conj frio(o)5.jpeg", "nome" => "Conjunto de Boucle", "preco" => "R$ 159,90"],
+  ["imagem" => "conj frio(o)6.jpeg", "nome" => "Conjunto de Boucle 4 ao 10", "preco" => "R$ 219,00"],
+  ["imagem" => "Conj8.jpeg", "nome" => "Conjunto de batizado P ao 3", "preco" => "R$ 229,90"],
+  ["imagem" => "conj9.jpeg", "nome" => "Conjunto Social P ao 3", "preco" => "R$ 199,00"],
+  ["imagem" => "conj10.jpeg", "nome" => "Conj jardineira 1 ao 4", "preco" => "R$ 224,00"],
+  ["imagem" => "conj11.jpeg", "nome" => "Conjunto de Moleton 10", "preco" => "R$ 149,90"],
+  ["imagem" => "conj12.jpeg", "nome" => "Conjunto Social 2", "preco" => "R$ 269,00"],
+  ["imagem" => "conj13.jpeg", "nome" => "Conjunto de Moletom 10", "preco" => "R$ 199,90"]
 ];
-
-$nomeProduto = "Conjunto de saída de Maternidade azul";
-$preco = "R$ 189,90";
-$whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho interesse no produto: $nomeProduto - $preco");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -43,7 +39,7 @@ $whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho intere
   <nav class="navbar">
     <ul>
       <li><a href="home.php">Início</a></li>
-      <li><a href="#">Sobre</a></li>
+      <li><a href="sobre.php">Sobre</a></li>
       <li class="dropdown">
         <a href="#">Infantil</a>
         <div class="mega-menu">
@@ -54,9 +50,8 @@ $whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho intere
           </div>
           <div class="column">
             <h4>Menino</h4>
-            <a href="#">Conjuntos</a>
-            <a href="#">Camisetas</a>
-            <a href="#">Calças</a>
+            <a href="conj-meninos.php">Conjuntos</a>
+            
           </div>
         </div>
       </li>
@@ -65,13 +60,13 @@ $whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho intere
         <div class="mega-menu">
           <div class="column">
             <h4>Menina</h4>
-            <a href="bebês-menina.php">Conjuntos</a>
-            <a href="#">Saída Maternidade</a>
+            <a href="bebes-meninas.php">Conjuntos</a>
+            
           </div>
           <div class="column">
             <h4>Menino</h4>
-            <a href="bebês-menino.php">Conjuntos</a>
-            <a href="#">Saída Maternidade</a>
+            <a href="bebes-menino.php">Conjuntos</a>
+           
           </div>
         </div>
       </li>
@@ -84,7 +79,13 @@ $whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho intere
       <h2 class="mb-4 fw-bold">Conjuntos</h2>
       <div class="row g-4">
 
-        <?php foreach ($produtos as $img): ?>
+        <?php foreach ($produtos as $produto): ?>
+          <?php
+            $img = $produto['imagem'];
+            $nomeProduto = $produto['nome'];
+            $preco = $produto['preco'];
+            $whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho interesse no produto: $nomeProduto - $preco");
+          ?>
           <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100 d-flex flex-column">
               <img src="fotos/<?= $img ?>" class="card-img-top" alt="<?= $nomeProduto ?>">
@@ -105,8 +106,9 @@ $whatsLink = "https://wa.me/5544998443838?text=" . urlencode("Olá! Tenho intere
 
   <?php include 'footer.php'; ?>
 
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

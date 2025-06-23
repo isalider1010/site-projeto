@@ -1,4 +1,4 @@
-<?php  ?>
+<?php ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,20 +25,18 @@
     <nav class="navbar">
       <ul>
         <li><a href="home.php">Início</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="sobre.php">Sobre</a></li>
         <li class="dropdown">
           <a href="#">Infantil</a>
           <div class="mega-menu">
             <div class="column">
               <h4>Menina</h4>
               <a href="conj-meninas.php">Conjuntos</a>
-              <a href="meninas-vestido.php">Vestidos</a>
+             
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="#">Conjuntos</a>
-              <a href="#">Camisetas</a>
-              <a href="#">Calças</a>
+              <a href="conj-meninos.php">Conjuntos</a>
             </div>
           </div>
         </li>
@@ -47,13 +45,13 @@
           <div class="mega-menu">
             <div class="column">
               <h4>Menina</h4>
-              <a href="bebês-menina.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+              <a href="bebes-meninas.php">Conjuntos</a>
+              
             </div>
             <div class="column">
               <h4>Menino</h4>
-              <a href="bebês-menino.php">Conjuntos</a>
-              <a href="#">Saída Maternidade</a>
+              <a href="bebes-menino.php">Conjuntos</a>
+              
             </div>
           </div>
         </li>
@@ -68,27 +66,48 @@
 
         <?php
           $produtos = [
-            "bory2(a).jpeg",
-            "bory3(o).jpeg",
-            "conj bory(o)2.jpeg",
-            "conj bory(o)3.jpeg",
-            "conj bory(o)4.jpeg",
-            "conj menino.jpeg",
-            "logo.baby(o).jpeg"
+           
+            [
+              'imagem' => 'bory3(o).jpeg',
+              'nome'   => 'Saída de Maternidade Aconchego RN',
+              'preco'  => 'R$ 259,00'
+            ],
+            [
+              'imagem' => 'conj bory(o)2.jpeg',
+              'nome'   => 'Jardineira c/ Bory RN',
+              'preco'  => 'R$ 179,90'
+            ],
+            [
+              'imagem' => 'conj bory(o)3.jpeg',
+              'nome'   => 'Saída de Maternidade 5 peças RN',
+              'preco'  => 'R$ 359,90'
+            ],
+            [
+              'imagem' => 'conj bory(o)4.jpeg',
+              'nome'   => 'Jardineira c/ Casaco e Body RN',
+              'preco'  => 'R$ 232,90'
+            ],
+            [
+              'imagem' => 'conj menino.jpeg',
+              'nome'   => 'Conjuto Social 1 ao 10',
+              'preco'  => 'R$ 221,80'
+            ],
+            [
+              'imagem' => 'logo.baby(o).jpeg',
+              'nome'   => 'Macacão de Plush e Colete RN e P',
+              'preco'  => 'R$ 169,90'
+            ],
           ];
 
-          $nome = "Conjunto de saída de Maternidade azul";
-          $preco = "R$ 189,90";
-
-          foreach ($produtos as $img) {
+          foreach ($produtos as $produto) {
             echo '
             <div class="col-12 col-sm-6 col-md-3">
               <div class="card h-100 d-flex flex-column">
-                <img src="fotos/' . $img . '" class="card-img-top" alt="' . $nome . '">
+                <img src="fotos/' . $produto['imagem'] . '" class="card-img-top" alt="' . $produto['nome'] . '">
                 <div class="card-body d-flex flex-column">
-                  <p class="card-title fw-semibold">' . $nome . '</p>
-                  <p class="text-success fw-bold">' . $preco . '</p>
-                  <a href="https://wa.me/5544998443838?text=Olá! Tenho interesse no produto: ' . urlencode($nome) . ' - ' . urlencode($preco) . '" 
+                  <p class="card-title fw-semibold">' . $produto['nome'] . '</p>
+                  <p class="text-success fw-bold">' . $produto['preco'] . '</p>
+                  <a href="https://wa.me/5544998443838?text=Olá! Tenho interesse no produto: ' . urlencode($produto['nome']) . ' - ' . urlencode($produto['preco']) . '" 
                      target="_blank" class="btn btn-success w-100 mt-auto">
                      <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
                   </a>
@@ -102,10 +121,9 @@
       </div>
     </section>
 
-   <?php include 'footer.php'; ?>
-
+    <?php include 'footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
