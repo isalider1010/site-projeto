@@ -78,12 +78,6 @@
                   <p class="mt-2 fw-bold">Meninas</p>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                  <a href="meninas-vestido.php">
-                    <img src="fotos/vestido_redimensionado.jpeg" alt="Vestidos" class="categoria-img">
-                  </a>
-                  <p class="mt-2 fw-bold">Vestidos</p>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                   <a href="conj-meninas.php">
                     <img src="fotos/conjuntoMenina-logo.jpeg" alt="Conjuntos" class="categoria-img">
                   </a>
@@ -93,7 +87,13 @@
                   <a href="bebês-menina.php">
                     <img src="fotos/logo.baby(a).jpeg" alt="Bebês" class="categoria-img">
                   </a>
-                  <p class="mt-2 fw-bold">Bebês</p>
+                  <p class="mt-2 fw-bold">Conjuntos</p>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                  <a href="acessórios.php">
+                    <img src="fotos/logonaninha.jpeg" alt="Acessórios" class="categoria-img">
+                  </a>
+                  <p class="mt-2 fw-bold">Naninhas</p>
                 </div>
               </div>
             </div>
@@ -120,9 +120,9 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                   <a href="acessórios.php">
-                    <img src="fotos/logonaninha.jpeg" alt="Verão" class="categoria-img">
+                    <img src="fotos/logonaninha.jpeg" alt="Naninhas" class="categoria-img">
                   </a>
-                  <p class="mt-2 fw-bold">Verão</p>
+                  <p class="mt-2 fw-bold">Naninhas</p>
                 </div>
               </div>
             </div>

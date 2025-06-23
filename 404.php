@@ -117,7 +117,7 @@
     <div class="pagina-404">
       <h1>404</h1>
       <p>Ops! A página que você tentou acessar não foi encontrada.</p>
-      <a href="index.php">Voltar para a página inicial</a>
+      <a href="home.php">Voltar para a página inicial</a>
     </div>
   </main>
 

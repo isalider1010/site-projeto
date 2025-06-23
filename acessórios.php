@@ -68,7 +68,7 @@
             <img src="fotos/naninha.jpeg" class="card-img-top" alt="Naninha" />
             <div class="card-body">
               <p class="card-title fw-semibold">Naninha Azul</p>
-              <p class="text-success fw-bold">R$ 189,90</p>
+              <p class="text-success fw-bold">R$ 74,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Naninha%20Azul%20-%20R$%20189,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>
@@ -80,8 +80,8 @@
           <div class="card h-100">
             <img src="fotos/naninha2.jpeg" class="card-img-top" alt="Naninha" />
             <div class="card-body">
-              <p class="card-title fw-semibold">Naninha Rosa</p>
-              <p class="text-success fw-bold">R$ 189,90</p>
+              <p class="card-title fw-semibold">Naninha </p>
+              <p class="text-success fw-bold">R$ 74,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Naninha%20Rosa%20-%20R$%20189,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>
@@ -93,8 +93,8 @@
           <div class="card h-100">
             <img src="fotos/naninha3.jpeg" class="card-img-top" alt="Naninha" />
             <div class="card-body">
-              <p class="card-title fw-semibold">Naninha Verde</p>
-              <p class="text-success fw-bold">R$ 189,90</p>
+              <p class="card-title fw-semibold">Naninha </p>
+              <p class="text-success fw-bold">R$ 74,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Naninha%20Verde%20-%20R$%20189,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>
@@ -106,8 +106,8 @@
           <div class="card h-100">
             <img src="fotos/naninha4.jpeg" class="card-img-top" alt="Naninha" />
             <div class="card-body">
-              <p class="card-title fw-semibold">Naninha Amarela</p>
-              <p class="text-success fw-bold">R$ 189,90</p>
+              <p class="card-title fw-semibold">Naninha </p>
+              <p class="text-success fw-bold">R$ 74,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Naninha%20Amarela%20-%20R$%20189,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>
@@ -119,8 +119,8 @@
           <div class="card h-100">
             <img src="fotos/naninha5.jpeg" class="card-img-top" alt="Naninha" />
             <div class="card-body">
-              <p class="card-title fw-semibold">Naninha Rosa Claro</p>
-              <p class="text-success fw-bold">R$ 189,90</p>
+              <p class="card-title fw-semibold">Naninha </p>
+              <p class="text-success fw-bold">R$ 74,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Naninha%20Rosa%20Claro%20-%20R$%20189,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>

@@ -66,8 +66,8 @@
           <div class="card h-100">
             <img src="fotos/conj frio(a).jpeg" class="card-img-top" alt="Macacão Pantacourt" />
             <div class="card-body d-flex flex-column">
-              <p class="card-title fw-semibold">Macacão Menina Pantacourt Flores</p>
-              <p class="text-success fw-bold">R$ 39,90</p>
+              <p class="card-title fw-semibold">Conjunto de Boucle 1 ao 3 </p> 
+              <p class="text-success fw-bold">R$ 174,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Macacão%20Menina%20Pantacourt%20Flores%20-%20R$%2039,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>
@@ -79,8 +79,8 @@
           <div class="card h-100">
             <img src="fotos/conj(a).jpeg" class="card-img-top" alt="Conjunto Blusa e Saia" />
             <div class="card-body d-flex flex-column">
-              <p class="card-title fw-semibold">Conjunto Blusa Franzida com Saia Rosa</p>
-              <p class="text-success fw-bold">R$ 39,90</p>
+              <p class="card-title fw-semibold">Conjunto Aconchego 1 ao 4</p>
+              <p class="text-success fw-bold">R$ 189,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Conjunto%20Blusa%20Franzida%20com%20Saia%20Rosa%20-%20R$%2039,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>
@@ -90,24 +90,11 @@
 
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card h-100">
-            <img src="fotos/vestido (a).jpeg" class="card-img-top" alt="Vestido Menina" />
+            <img src="fotos/conj menina2" class="card-img-top" alt="Vestido Menina" />
             <div class="card-body d-flex flex-column">
-              <p class="card-title fw-semibold">Vestido Floral Rosa</p>
-              <p class="text-success fw-bold">R$ 39,90</p>
+              <p class="card-title fw-semibold">Conjunto c/ Casaco Soft 1 ao 3</p>
+              <p class="text-success fw-bold">R$ 179,90</p>
               <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Vestido%20Floral%20Rosa%20-%20R$%2039,90" target="_blank" class="btn btn-success mt-auto w-100">
-                <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="card h-100">
-            <img src="fotos/vestido(a)2.jpeg" class="card-img-top" alt="Vestido Menina 2" />
-            <div class="card-body d-flex flex-column">
-              <p class="card-title fw-semibold">Vestido Rosa com Laço</p>
-              <p class="text-success fw-bold">R$ 39,90</p>
-              <a href="https://wa.me/5544998443838?text=Olá!%20Tenho%20interesse%20no%20produto%20Vestido%20Rosa%20com%20Laço%20-%20R$%2039,90" target="_blank" class="btn btn-success mt-auto w-100">
                 <i class="fab fa-whatsapp me-2"></i>Comprar pelo WhatsApp
               </a>
             </div>
